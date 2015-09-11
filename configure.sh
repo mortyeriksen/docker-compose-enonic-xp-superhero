@@ -26,7 +26,7 @@ sed -i "s/SITE_HOSTNAME/$INSTANCE_HOSTNAME/g" apache2/sites/$INSTANCE_HOSTNAME.c
 echo "###############################################################################"
 echo "### Adding $INSTANCE_HOSTNAME to Enonic XP vhosts"
 
-sed -i "s/HOSTNAME/$MY_HOSTNAME/g" $EXP_VHOST_FILE
+sed -i "s/SITE_HOSTNAME/$INSTANCE_HOSTNAME/g" $EXP_VHOST_FILE
 
 echo "###############################################################################"
 echo "### Ready to build and deploy with docker-compose"
