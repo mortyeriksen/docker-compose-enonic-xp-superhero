@@ -15,7 +15,7 @@ To configure the Instance automaticly, use the configure.sh script and replace "
 
 Now, build the container set with docker-compose
 ```
-dcker-composeo build 
+docker-compose build 
 ```
 
 ## Running the application
