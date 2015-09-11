@@ -19,8 +19,8 @@ echo "##########################################################################
 echo "### Creating apache2 config for $INSTANCE_HOSTNAME"
 
 cp $APACHE2_VHOST_TEMPLATE apache2/sites/$INSTANCE_HOSTNAME.conf
-sed -i "s/SITE_HOSTNAME/$INSTANCE_HOSTNAME/g" apache2/sites/$INSTANCE_HOSTNAME.conf
 sed -i "s/SITE_HOSTNAME_ESCAPED/$(echo INSTANCE_HOSTNAME | sed 's/\./\\./g')/g" apache2/sites/$INSTANCE_HOSTNAME.conf
+sed -i "s/SITE_HOSTNAME/$INSTANCE_HOSTNAME/g" apache2/sites/$INSTANCE_HOSTNAME.conf
 
 
 echo "###############################################################################"
