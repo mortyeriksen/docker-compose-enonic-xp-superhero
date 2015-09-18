@@ -24,3 +24,14 @@ To run the application, simply run the following command after building the imag
 $ docker-compose up -d 
 ```
 
+## Redeploy changes
+To redeploy changes to in the Enonic XP installation, just redeploy the affected containers ( and not the storage container ).
+```
+$ docker-compose build exp apache2
+$ docker-compose up --no-deps -d exp apache2
+```
+
+# Usefull links
+
+- Using Docker-compose in production: https://docs.docker.com/compose/production/
+- 
