@@ -1,5 +1,7 @@
 FROM enonic/xp-app:6.2.0
 
+ENV JAVA_OPTS "-Xms1024M -Xmx1024M"
+
 
 USER root
 
