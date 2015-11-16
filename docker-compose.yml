@@ -1,6 +1,6 @@
 apache2:
   build: apache2
-  hostname: navlab-test.customer.enonic.io
+  hostname: superhero.tryme.enonic.io
   restart: always
   ports:
     - "80:80"
